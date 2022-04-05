@@ -14,7 +14,7 @@
         <style>
         body{
           margin:0;
-          background-color:#a99d9dc4;
+          background-color:#7ee9e759;
           overflow-x:hidden;
           padding:10px;
         }
@@ -36,14 +36,23 @@
            background-color:#3292ffde;
            cursor:pointer;
          }
+         div.background{
+           height:87vh;
+           background-image:url({{s_image}});
+           background-repeat : no-repeat;
+           background-size : cover;
+           background-attachment:fixed;
+           background-position:10% 30%
+         }
     </style>
 
     </head>
     <body>
-    <div class="nav" style="display:grid;grid-template-columns:20% 20% auto;padding-top:20px;column-gap:130px">
+    <div class="background">
+    <div class="nav" id="on-top" style="display:grid;grid-template-columns:20% 20% auto;padding-top:20px;column-gap:130px">
     <h2>
          {% if request.user.is_authenticated %}
-                <p id="top">Hello {{request.user}}!</p>
+                <p id="top" style = "background-color:yellow;">Hello {{request.user}}!</p>
          {% endif %}
     </h2>
         <!--[if lt IE 7]>
@@ -89,12 +98,15 @@
        <br>
        <hr>
        <br>
-       <center><h1 style="background-color:#df0000bf">NEWSROOM</h1></center> 
+       <center>
+       <h1 style="background-color:#09e2ff80;text-transform:uppercase;text-decoration:underline;">{{state}}</h1>
+       </center>
        <br>
        <hr>
        <br>
+       </div>
         <div class="jumbotron">
-        <h1 style="text-transform:uppercase;text-decoration:underline">{{state}}</h1>
+        <center><h1 style="background-color:#ff820cad">NEWSROOM</h1></center> 
            <h2><a href="" class="btn btn-danger">Refresh News</a></h2>
        
         </div>
@@ -124,7 +136,7 @@
 
  </form>
 </div>
-<center><h3><a href="#top">Back to Top</a></h3></center>
+<center><h3><a href="#on-top">Back to Top</a></h3></center>
 <br>
 <br>
 <hr>
