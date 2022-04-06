@@ -1,4 +1,5 @@
 # Jagrukta
 News Aggregator
 
-![Screenshot (27)](https://user-images.githubusercontent.com/63097779/162020939-613e67e7-fe4d-4b85-ad03-3a1a2a80badb.png)
+
+![Screenshot (39)](https://user-images.githubusercontent.com/63097779/162085728-910627b5-78aa-46e5-b478-163efb331c86.png)
