@@ -28,14 +28,19 @@
          }
          button {
              margin-left:8px;
-             width: 12vw;
+             width: 10vw;
              padding: 1vw;
-             border-radius:10px;
+             border-radius:50px;
+             box-shadow: #ADCFFF 0 -12px 6px inset;
          }
          button:hover{
            padding:1.1vw;
-           background-color:#3292ffde;
+           {% comment %} background-color:#3292ffde; {% endcomment %}
+          
            cursor:pointer;
+           background-color: ##E8CACA;
+           box-shadow: #FF6314 0 -6px 8px inset;
+           
          }
          div.background{
            height:87vh;
@@ -50,7 +55,7 @@
     </head>
     <body>
     <div class="background">
-    <div class="nav" id="on-top" style="display:grid;grid-template-columns:18% 20% auto;padding-top:20px;column-gap:130px">
+    <div class="nav" id="on-top" style="display:grid;grid-template-columns:18% 20% auto;padding-top:20px;column-gap:130px;">
     <h2>
          {% if request.user.is_authenticated %}
                 <p id="top" style = "background-color:yellow;">Hello {{request.user}}!</p>
@@ -59,13 +64,13 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-<a href="http://127.0.0.1:8000/"><button style="size:20px;margin-top:30px"> LOGOUT </button></a>    
+
 <div style="align-items:center">
-<form class="form-signin"  method="GET" >
+<form class="form-signin"  method="GET" style="margin-left:50px" >
 
 <label for="state"></label>
 <select id="state" name="state-name">
-  <option value="none" selected disabled hidden>Enter Location...</option>
+  <option value="none" selected disabled hidden>Select Your Location..</option>
   <option value="uttar-pradesh">Uttar Pradesh</option>
   <option value="delhi-ncr">Delhi NCR</option>
   <option value="punjab">Punjab</option>
@@ -90,13 +95,13 @@
       <!-- <p><input type="text" id="states" name="state-name" class="form-control-text-center" placeholder="Enter State Name" required></p>-->
        <br>
 
-       <p><button class="btn-btn-outline-secondary" type="submit">SEARCH</button></p>
-       
-       </div>
+       <p><button class="btn-btn-outline-secondary" style="margin-left:180px" type="submit" >SEARCH</button></p>
+</div>
 
-       
+  <a href="http://127.0.0.1:8000/"><button style="size:20px; margin-top:5px;margin-left:380px"> LOGOUT </button></a>    
 
-       </div>
+</div>
+      
 
        <br>
        <hr>
@@ -164,3 +169,51 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
     </body>
 </html>
+
+{% comment %} 
+<!-- HTML !-->
+<button class="button-73" role="button">Button 73</button>
+
+/* CSS */
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+} {% endcomment %}
