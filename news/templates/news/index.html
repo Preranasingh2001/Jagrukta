@@ -18,15 +18,16 @@
           overflow-x:hidden;
           padding:10px;
         }
+
           select{
-             width: 30vw;
+             width: 35vw;
              padding: 1vw;
              text-align-last:center;
              border:3px solid black;
              background-color:#a9bd2bb0;
          }
          button {
-             margin-left:105px;
+             margin-left:8px;
              width: 12vw;
              padding: 1vw;
              border-radius:10px;
@@ -49,7 +50,7 @@
     </head>
     <body>
     <div class="background">
-    <div class="nav" id="on-top" style="display:grid;grid-template-columns:20% 20% auto;padding-top:20px;column-gap:130px">
+    <div class="nav" id="on-top" style="display:grid;grid-template-columns:18% 20% auto;padding-top:20px;column-gap:130px">
     <h2>
          {% if request.user.is_authenticated %}
                 <p id="top" style = "background-color:yellow;">Hello {{request.user}}!</p>
@@ -58,14 +59,13 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    
-    <a href="http://127.0.0.1:8000/" ><button style="size:20px;margin-top:30px"> LOGOUT </button></a>
-  
+<a href="http://127.0.0.1:8000/"><button style="size:20px;margin-top:30px"> LOGOUT </button></a>    
 <div style="align-items:center">
-<form class="form-signin"  method="GET">
+<form class="form-signin"  method="GET" >
 
 <label for="state"></label>
 <select id="state" name="state-name">
+  <option value="none" selected disabled hidden>Enter Location...</option>
   <option value="uttar-pradesh">Uttar Pradesh</option>
   <option value="delhi-ncr">Delhi NCR</option>
   <option value="punjab">Punjab</option>
@@ -93,8 +93,11 @@
        <p><button class="btn-btn-outline-secondary" type="submit">SEARCH</button></p>
        
        </div>
+
        
+
        </div>
+
        <br>
        <hr>
        <br>

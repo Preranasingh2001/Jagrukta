@@ -167,8 +167,8 @@ def homePage(request):
                         "jharkhand":"https://tourism.jharkhand.gov.in/Application/uploadDocuments/location/1140X320/location20200929_133548.jpg",
                         "himachal-pradesh":"https://wallpapercave.com/wp/wp5165428.jpg",
                         "jammu-and-kashmir":"https://wallpapercave.com/wp/wp2678168.jpg",
-                        "west-bengal":"https://wallpapercave.com/dwp1x/wp4190128.jpg",
-                        "odisha":"https://mahabaho.com/wp-content/uploads/2021/09/sun-temple1.jpg",
+                        "west-bengal":"https://static.toiimg.com/photo/67786078.cms",
+                        "odisha":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/The_sun_temple_at_konark.jpg/1024px-The_sun_temple_at_konark.jpg",
                     }
 
                 s_image = dict[state]
